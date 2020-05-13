@@ -5,6 +5,7 @@ using UnityEngine;
 public class InputManager : MonoBehaviour
 {
     [SerializeField] BoatController boatController;
+    [SerializeField] FreeLookCam freeLook;
     BoatControls inputs;
 
     private void Awake() => inputs = new BoatControls();
@@ -17,5 +18,6 @@ public class InputManager : MonoBehaviour
     void Update()
     {
         boatController.MoveVec2 = inputs.Player.Move.ReadValue<Vector2>();
+        freeLook.mouseDelta = inputs.Player.Look.ReadValue<Vector2>();
     }
 }
