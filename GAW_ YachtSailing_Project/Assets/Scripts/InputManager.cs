@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class InputManager : MonoBehaviour
 {
@@ -19,5 +20,7 @@ public class InputManager : MonoBehaviour
     {
         boatController.MoveVec2 = inputs.Player.Move.ReadValue<Vector2>();
         freeLook.mouseDelta = inputs.Player.Look.ReadValue<Vector2>();
+
+        boatController.TackingButton = inputs.Player.Tacking.ReadValue<float>() > InputSystem.settings.defaultButtonPressPoint;
     }
 }

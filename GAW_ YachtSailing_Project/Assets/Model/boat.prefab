@@ -160,8 +160,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 7102746934194495036}
-  torque: 20
+  torque: 10
   forwardForce: 20
+  wind: {fileID: 0}
 --- !u!114 &7102746934194495038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -215,7 +216,7 @@ Cloth:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2796027930030071235}
   m_Enabled: 1
-  m_StretchingStiffness: 1
+  m_StretchingStiffness: 0.5
   m_BendingStiffness: 0
   m_UseTethers: 1
   m_UseGravity: 1
@@ -231,56 +232,56 @@ Cloth:
   m_SolverFrequency: 120
   m_SleepThreshold: 0.1
   m_Coefficients:
-  - maxDistance: 0.2
-    collisionSphereDistance: 3.4028235e+38
-  - maxDistance: 3.4028235e+38
-    collisionSphereDistance: 3.4028235e+38
-  - maxDistance: 0.2
-    collisionSphereDistance: 3.4028235e+38
-  - maxDistance: 3.4028235e+38
-    collisionSphereDistance: 3.4028235e+38
-  - maxDistance: 0.2
-    collisionSphereDistance: 3.4028235e+38
-  - maxDistance: 3.4028235e+38
-    collisionSphereDistance: 3.4028235e+38
-  - maxDistance: 3.4028235e+38
-    collisionSphereDistance: 3.4028235e+38
-  - maxDistance: 0.2
-    collisionSphereDistance: 3.4028235e+38
-  - maxDistance: 3.4028235e+38
-    collisionSphereDistance: 3.4028235e+38
-  - maxDistance: 3.4028235e+38
-    collisionSphereDistance: 3.4028235e+38
-  - maxDistance: 0.2
-    collisionSphereDistance: 3.4028235e+38
-  - maxDistance: 0.2
-    collisionSphereDistance: 3.4028235e+38
-  - maxDistance: 3.4028235e+38
-    collisionSphereDistance: 3.4028235e+38
-  - maxDistance: 3.4028235e+38
-    collisionSphereDistance: 3.4028235e+38
-  - maxDistance: 0.2
-    collisionSphereDistance: 3.4028235e+38
-  - maxDistance: 3.4028235e+38
-    collisionSphereDistance: 3.4028235e+38
-  - maxDistance: 3.4028235e+38
-    collisionSphereDistance: 3.4028235e+38
-  - maxDistance: 0.2
-    collisionSphereDistance: 3.4028235e+38
-  - maxDistance: 0.2
-    collisionSphereDistance: 3.4028235e+38
-  - maxDistance: 3.4028235e+38
-    collisionSphereDistance: 3.4028235e+38
-  - maxDistance: 0.2
-    collisionSphereDistance: 3.4028235e+38
-  - maxDistance: 3.4028235e+38
-    collisionSphereDistance: 3.4028235e+38
-  - maxDistance: 0.2
-    collisionSphereDistance: 3.4028235e+38
-  - maxDistance: 0.2
-    collisionSphereDistance: 3.4028235e+38
-  - maxDistance: 0.2
-    collisionSphereDistance: 3.4028235e+38
+  - maxDistance: 0.5
+    collisionSphereDistance: 0
+  - maxDistance: 1
+    collisionSphereDistance: 1
+  - maxDistance: 0
+    collisionSphereDistance: 0
+  - maxDistance: 1
+    collisionSphereDistance: 1
+  - maxDistance: 0
+    collisionSphereDistance: 0
+  - maxDistance: 1
+    collisionSphereDistance: 1
+  - maxDistance: 1
+    collisionSphereDistance: 1
+  - maxDistance: 0.5
+    collisionSphereDistance: 0
+  - maxDistance: 1
+    collisionSphereDistance: 1
+  - maxDistance: 1
+    collisionSphereDistance: 1
+  - maxDistance: 0
+    collisionSphereDistance: 0
+  - maxDistance: 0.5
+    collisionSphereDistance: 0
+  - maxDistance: 1
+    collisionSphereDistance: 1
+  - maxDistance: 1
+    collisionSphereDistance: 1
+  - maxDistance: 0
+    collisionSphereDistance: 0
+  - maxDistance: 1
+    collisionSphereDistance: 1
+  - maxDistance: 1
+    collisionSphereDistance: 1
+  - maxDistance: 0
+    collisionSphereDistance: 0
+  - maxDistance: 0.5
+    collisionSphereDistance: 0
+  - maxDistance: 1
+    collisionSphereDistance: 1
+  - maxDistance: 0
+    collisionSphereDistance: 0
+  - maxDistance: 1
+    collisionSphereDistance: 1
+  - maxDistance: 0.5
+    collisionSphereDistance: 0
+  - maxDistance: 0.5
+    collisionSphereDistance: 0
+  - maxDistance: 0
+    collisionSphereDistance: 0
   m_CapsuleColliders: []
   m_SphereColliders: []
   m_SelfCollisionDistance: 0
@@ -339,8 +340,8 @@ SkinnedMeshRenderer:
   m_BlendShapeWeights: []
   m_RootBone: {fileID: 0}
   m_AABB:
-    m_Center: {x: 0, y: -0.00000004160629, z: 0}
-    m_Extent: {x: 6.161954, y: 7.1054274e-14, z: 3.5824475}
+    m_Center: {x: 0, y: -0.00000004114152, z: 0}
+    m_Extent: {x: 6.248702, y: 0.000000003975913, z: 3.582448}
   m_DirtyAABB: 0
 --- !u!1 &7102746933625704163
 GameObject:
@@ -366,14 +367,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7102746933625704163}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: -0.3770327, z: 0, w: 0.9262}
   m_LocalPosition: {x: 0, y: 4.15, z: 2.56}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7102746934034372533}
   m_Father: {fileID: 2875744602806369544}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -44.3, z: 0}
 --- !u!114 &7102746933625704173
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -414,7 +415,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7102746934034372522}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.38, z: -7.55}
+  m_LocalPosition: {x: 0, y: 0.38, z: -10.32}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7102746933625704172}
@@ -711,37 +712,37 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: cc57a01fe3d75724daab877afa666316,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.03809525
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: cc57a01fe3d75724daab877afa666316,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.1428573
+      value: 2.29
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: cc57a01fe3d75724daab877afa666316,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.5091627
+      value: -3.61
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: cc57a01fe3d75724daab877afa666316,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.000000029802319
+      value: -0.0022107873
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: cc57a01fe3d75724daab877afa666316,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: -0.0022108166
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: cc57a01fe3d75724daab877afa666316,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.70710677
+      value: -0.7071033
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: cc57a01fe3d75724daab877afa666316,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071069
+      value: 0.70710343
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: cc57a01fe3d75724daab877afa666316,
         type: 3}
@@ -751,7 +752,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: cc57a01fe3d75724daab877afa666316,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: -0.358
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: cc57a01fe3d75724daab877afa666316,
         type: 3}
@@ -761,12 +762,12 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: cc57a01fe3d75724daab877afa666316,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: -90.00001
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: cc57a01fe3d75724daab877afa666316,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.9523809
+      value: 0.96578836
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: cc57a01fe3d75724daab877afa666316,
         type: 3}
@@ -782,6 +783,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Sail
+      objectReference: {fileID: 0}
+    - target: {fileID: 2605813505058352162, guid: cc57a01fe3d75724daab877afa666316,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 2605813505058352162, guid: cc57a01fe3d75724daab877afa666316,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2605813505058352162, guid: cc57a01fe3d75724daab877afa666316,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.06
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8882936541465475638, guid: cc57a01fe3d75724daab877afa666316, type: 3}
