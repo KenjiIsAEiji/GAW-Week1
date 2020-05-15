@@ -90,9 +90,9 @@ GameObject:
   - component: {fileID: 2875744602806369544}
   - component: {fileID: 7102746934194495036}
   - component: {fileID: 7102746934194495037}
+  - component: {fileID: 7102746934194495039}
   - component: {fileID: 7102746934194495027}
   - component: {fileID: 7102746934194495038}
-  - component: {fileID: 7102746934194495039}
   m_Layer: 0
   m_Name: boat
   m_TagString: Untagged
@@ -144,39 +144,9 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.81
-  m_Height: 4.54
+  m_Height: 4.5
   m_Direction: 2
   m_Center: {x: 0, y: 0.14, z: 1.67}
---- !u!114 &7102746934194495027
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1275622201375313691}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 253e246129542034486305c95cbc00fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rb: {fileID: 7102746934194495036}
-  torque: 10
-  forwardForce: 20
-  wind: {fileID: 0}
---- !u!114 &7102746934194495038
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1275622201375313691}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18eaa4894670ff54da86e506ca8b469c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  boatController: {fileID: 7102746934194495027}
-  freeLook: {fileID: 7102746933625704173}
 --- !u!114 &7102746934194495039
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -208,6 +178,36 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &7102746934194495027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1275622201375313691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 253e246129542034486305c95cbc00fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 7102746934194495036}
+  torque: 10
+  forwardForce: 20
+  wind: {fileID: 0}
+--- !u!114 &7102746934194495038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1275622201375313691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18eaa4894670ff54da86e506ca8b469c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boatController: {fileID: 7102746934194495027}
+  freeLook: {fileID: 7102746933625704173}
 --- !u!183 &183285658
 Cloth:
   m_ObjectHideFlags: 0

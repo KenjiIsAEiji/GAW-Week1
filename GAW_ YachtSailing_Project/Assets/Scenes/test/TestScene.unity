@@ -151,6 +151,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &541669199 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2875744602332830820, guid: 8492936359d1f854aa8fa7872720481d,
+    type: 3}
+  m_PrefabInstance: {fileID: 7102746933170314660}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1032710741
 GameObject:
   m_ObjectHideFlags: 0
@@ -243,6 +249,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!183 &1118026825 stripped
+Cloth:
+  m_CorrespondingSourceObject: {fileID: 183285658, guid: 8492936359d1f854aa8fa7872720481d,
+    type: 3}
+  m_PrefabInstance: {fileID: 7102746933170314660}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2033382319
 GameObject:
   m_ObjectHideFlags: 0
@@ -391,5 +403,25 @@ PrefabInstance:
       propertyPath: wind
       value: 
       objectReference: {fileID: 293766975}
+    - target: {fileID: 7102746934194495027, guid: 8492936359d1f854aa8fa7872720481d,
+        type: 3}
+      propertyPath: seil
+      value: 
+      objectReference: {fileID: 541669199}
+    - target: {fileID: 7102746934194495027, guid: 8492936359d1f854aa8fa7872720481d,
+        type: 3}
+      propertyPath: turnSpeed
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 7102746934194495027, guid: 8492936359d1f854aa8fa7872720481d,
+        type: 3}
+      propertyPath: cloth
+      value: 
+      objectReference: {fileID: 1118026825}
+    - target: {fileID: 7102746934194495027, guid: 8492936359d1f854aa8fa7872720481d,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8492936359d1f854aa8fa7872720481d, type: 3}
