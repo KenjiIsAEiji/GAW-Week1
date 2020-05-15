@@ -1,21 +1,3 @@
-# ProBuilder 4.2.3
-# https://unity3d.com/unity/features/worldbuilding/probuilder
-# 2020/05/13 21:11:36
-
-mtllib ./JibSail.mtl
-o JibSail
-
-g JibSail
-v 4.806533 -6.496401E-07 2.073611
-v -4.976778 2.186378E-06 2.095888
-v -4.932672 1.476493E-06 -2.116372
-
-vt -4.806533 2.073611
-vt 4.976778 2.095888
-vt 4.932672 -2.116372
-
-vn 2.895064E-07 1 -1.654968E-07
-
-usemtl mast
-f 3/3/1 2/2/1 1/1/1
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:5e61a5a7410785aa2768ced45254d24831e8d24a93e18fc4e7e345671014ed07
+size 403
