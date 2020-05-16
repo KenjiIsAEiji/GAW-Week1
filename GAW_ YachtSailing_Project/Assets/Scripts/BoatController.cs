@@ -18,6 +18,9 @@ public class BoatController : MonoBehaviour
     [Range(0f,1f)][SerializeField] float turnSpeed = 10;
     [SerializeField] Cloth cloth;
 
+    [Header("旗")]
+    [SerializeField] Transform flag;
+
     
     // Start is called before the first frame update
     void Start()
@@ -40,11 +43,13 @@ public class BoatController : MonoBehaviour
                 turnSpeed
             );
 
-        cloth.externalAcceleration = cloth.transform.InverseTransformDirection(wind.forward) * 40f;
+        cloth.externalAcceleration = cloth.transform.InverseTransformDirection(wind.forward) * 60f;
+
+        flag.rotation = Quaternion.LookRotation(wind.forward);
     }
 
     // Update is called once per frame
-    void LateUpdate()
+    void FixedUpdate()
     {
         if (TackingButton)
         {
