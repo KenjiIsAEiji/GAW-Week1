@@ -1386,12 +1386,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 626544978}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &316458885 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 316458885, guid: 8492936359d1f854aa8fa7872720481d,
-    type: 3}
-  m_PrefabInstance: {fileID: 7102746933170314660}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &326980752 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3885727992203542522, guid: 85938fd8fc1494c4f814bbc8350987ba,
@@ -12001,42 +11995,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 268528770, guid: 8492936359d1f854aa8fa7872720481d, type: 3}
-      propertyPath: Rudder
-      value: 
-      objectReference: {fileID: 316458885}
-    - target: {fileID: 268528770, guid: 8492936359d1f854aa8fa7872720481d, type: 3}
-      propertyPath: rudderSpeed
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 268528770, guid: 8492936359d1f854aa8fa7872720481d, type: 3}
-      propertyPath: tackingSpeed
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 316458885, guid: 8492936359d1f854aa8fa7872720481d, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 316458885, guid: 8492936359d1f854aa8fa7872720481d, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 316458885, guid: 8492936359d1f854aa8fa7872720481d, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 316458885, guid: 8492936359d1f854aa8fa7872720481d, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 316458885, guid: 8492936359d1f854aa8fa7872720481d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2007245591, guid: 8492936359d1f854aa8fa7872720481d, type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 704092864}
     - target: {fileID: 2007245594, guid: 8492936359d1f854aa8fa7872720481d, type: 3}
       propertyPath: m_Mesh
       value: 

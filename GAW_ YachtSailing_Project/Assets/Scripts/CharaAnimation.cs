@@ -14,6 +14,7 @@ public class CharaAnimation : MonoBehaviour
     [SerializeField] float rudderAngle = 45f;
     [SerializeField] float rudderSpeed = 0.1f;
     [SerializeField] float tackingSpeed = 1f;
+    [SerializeField] ParticleSystem particleSystem;
 
     // Start is called before the first frame update
     void Start()

@@ -21,6 +21,10 @@ public class BoatController : MonoBehaviour
     [Header("旗")]
     [SerializeField] Transform flag;
 
+    [Header("エフェクト")]
+    [SerializeField] ParticleSystem particleSystem;
+    [SerializeField] float particleRaito = 0.1f;
+
     
     // Start is called before the first frame update
     void Start()
@@ -46,6 +50,10 @@ public class BoatController : MonoBehaviour
         cloth.externalAcceleration = cloth.transform.InverseTransformDirection(wind.forward) * 60f;
 
         flag.rotation = Quaternion.LookRotation(wind.forward);
+
+        ParticleSystem.EmissionModule em = particleSystem.emission;
+
+        em.rateOverTime = (int)(particleRaito * rb.velocity.magnitude);
     }
 
     // Update is called once per frame
