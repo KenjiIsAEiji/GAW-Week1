@@ -27,7 +27,7 @@ public class FreeLookCam : MonoBehaviour
         yaw += mouseDelta.x * RotateSpeed * Time.deltaTime;
         pitch -= mouseDelta.y * RotateSpeed * Time.deltaTime;
 
-        pitch = Mathf.Clamp(pitch, -80, 60);
+        pitch = Mathf.Clamp(pitch, -5, 60);
 
         transform.eulerAngles = new Vector3(pitch, yaw, 0.0f);
     }
