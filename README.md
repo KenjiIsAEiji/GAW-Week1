@@ -1,5 +1,8 @@
 # GAW-Week1
 5/11から5/17のGAW用リポジトリ
+
+![image](https://user-images.githubusercontent.com/41467408/82152397-d9398600-989b-11ea-9379-4df8661dfca9.png)
+
 #### ゲームのテーマは 『ヨット』
 アイディアのきっかけは大学のヨット乗船の経験から
  
